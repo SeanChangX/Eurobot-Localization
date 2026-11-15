@@ -1,0 +1,8 @@
+# Same pipeline as .github/workflows/ci.yml, for the GitLab mirror.
+include:
+  - project: dit-robotics/dit-x
+    ref: develop
+    file: .gitlab/ci/domain.yml
+
+variables:
+  DIT_DOMAIN: localization

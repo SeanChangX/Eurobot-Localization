@@ -1,0 +1,11 @@
+fusion:
+  ros__parameters:
+    rate_hz: 50.0
+    frame_id: map
+    # fake trajectory: a circle around the field centre
+    radius: 0.6
+    center_x: 1.5
+    center_y: 1.0
+    angular_speed: 0.3      # rad/s
+    # rival poses older than this (ms) are reported as a WARN heartbeat
+    rival_latency_warn_ms: 100.0

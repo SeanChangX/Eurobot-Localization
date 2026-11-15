@@ -1,0 +1,3 @@
+fusion:
+  ros__parameters:
+    rate_hz: 100.0

@@ -1,0 +1,9 @@
+# colcon output (ditx builds into the shell repo's build/, but plain colcon works too)
+build/
+install/
+log/
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+.idea/

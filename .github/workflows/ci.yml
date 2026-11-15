@@ -1,0 +1,17 @@
+# Lint, build and test this domain inside the shared workspace, plus the
+# integration test with every other domain. All logic lives in the shell repo
+# (SeanChangX/DIT-X), so every domain is checked the same way.
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [develop, main]
+  workflow_dispatch:   # run it by hand: Actions tab -> ci -> Run workflow
+
+jobs:
+  ci:
+    uses: SeanChangX/DIT-X/.github/workflows/domain-ci.yml@develop
+    with:
+      domain: localization
+    secrets: inherit
